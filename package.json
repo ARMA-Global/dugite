@@ -1,5 +1,5 @@
 {
-  "name": "dugite",
+  "name": "dugite-dads",
   "version": "1.104.0",
   "description": "Elegant bindings for Git",
   "main": "./build/lib/index.js",
@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/desktop/dugite.git"
+    "url": "git+https://github.com/ARMA-Global/dugite.git"
   },
   "author": "GitHub and contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/desktop/dugite/issues"
+    "url": "https://github.com/ARMA-Global/dugite/issues"
   },
-  "homepage": "https://github.com/desktop/dugite#readme",
+  "homepage": "https://github.com/ARMA-Global/dugite#readme",
   "dependencies": {
     "checksum": "^0.1.1",
     "got": "^9.6.0",

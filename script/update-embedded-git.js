@@ -2,7 +2,7 @@ const got = require('got')
 const fs = require('fs')
 const path = require('path')
 
-const url = `https://api.github.com/repos/desktop/dugite-native/releases/latest`
+const url = `https://api.github.com/repos/ARMA-Global/dugite-native/releases/latest`
 
 const options = {
   headers: {
