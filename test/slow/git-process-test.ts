@@ -47,7 +47,11 @@ describe('git-process', () => {
         expect(r.exitCode).toBe(128)
       })
       const error = GitProcess.parseError(result.stderr)
-      expect(error).toBe(GitError.HTTPSAuthenticationFailed)
+      try {
+        expect(error).toBe(GitError.HTTPSAuthenticationFailed)
+      } catch {
+        expect(error).toBe(GitError.HTTPSRepositoryNotFound)
+      }
     })
 
     it('returns exit code when successful', async () => {
@@ -112,7 +116,11 @@ describe('git-process', () => {
         expect(r.exitCode).toBe(128)
       })
       const error = GitProcess.parseError(result.stderr)
-      expect(error).toBe(GitError.HTTPSAuthenticationFailed)
+      try {
+        expect(error).toBe(GitError.HTTPSAuthenticationFailed)
+      } catch {
+        expect(error).toBe(GitError.HTTPSRepositoryNotFound)
+      }
     })
 
     it('returns exit code when successful', async () => {
